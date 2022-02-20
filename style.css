@@ -1,0 +1,518 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*========== Base ==========*/
+:root{
+    --warna-primary : #04009A;
+    --warna-secondary : #77ACF1;
+    --warna-tambahan : #2447F9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--warna-primary);
+    font-size: 36px;
+}
+
+h2{
+    color: var(--warna-primary);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+p {
+    color: var(--warna-secondary);
+    font-size: 14px;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+    color: var(--warna-primary);
+}
+
+.nav-link:hover{
+    color: var(--warna-secondary);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 3px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--warna-primary);
+}
+
+.margin-container{
+    margin: 0 100px 0 100px;
+}
+
+.box-shadow{
+    box-shadow: 0px 4px 4px 0px var(--warna-secondary);
+}
+
+/* Logo */
+
+.logo{
+    color: var(--warna-primary);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo > span {
+    color: var(--warna-secondary);
+}
+
+/* Content1 */
+.title{
+    width: 488px;
+    margin-bottom: 30px;
+}
+
+.sub-title{
+    width: 441px;
+    margin-bottom: 85px;
+}
+
+.button-container{
+    border: 1px solid var(--warna-secondary);
+    border-radius: 8px;
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+    width: 488px;
+}
+
+.button {
+    width: 170px;
+    height: 50px;
+    padding: 11px 64px; 
+    background-color: var(--warna-tambahan);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.input-button{
+    margin: 16px;
+}
+
+#above{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+#above article img {
+    width: 560;
+}
+
+/* Content 2 */
+#profil{
+    margin-bottom: 100px;
+}
+.judul{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.besar{
+    font-size: 96px;
+    font-weight: 900;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.isi{
+    width: 560px;
+}
+
+.isi > h2 {
+    margin-bottom: 8px;
+}
+
+.isi > p {
+    margin-bottom: 8px;
+}
+
+/* Content 3 */
+#terkini{
+    margin-bottom: 100px;
+}
+
+#terkini .content  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabel {
+    width: 367px;
+    height: 378px;
+    border: 1px solid var(--warna-secondary);
+    padding: 36px 36px 0 36px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.tabel tr > th > h2 {
+    margin-bottom: 18px;
+    text-align: start;
+    font-weight: 600;
+}
+
+.tabel tr > th > p {
+    margin-bottom: 14px;
+    text-align: start;
+    font-weight: 200;
+}
+
+.tabel tr > td > p {
+    margin-bottom: 14px;
+    text-align: start;
+    border-bottom: 1px solid var(--warna-secondary);
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--warna-primary);
+}
+
+.tabel tr > th > a {
+    display: block;
+    margin-bottom: 23px;
+    margin-top: 12px;
+    color: var(--warna-primary);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: start;
+    cursor: pointer;
+}
+
+.tabel tr > td > p > span {
+    margin-left: 70px;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+}
+
+.biru {
+    background-color: var(--warna-tambahan);
+}
+
+/* Content 4 */
+
+.card {
+    width: 268px;
+    padding: 36px;
+    border: 1px solid var(--warna-secondary);
+    border-radius: 14px;
+}
+
+.card > h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.card > p {
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.card > a {
+    font-weight: 500;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/* Aside */
+#pimpinan{
+    margin-bottom: 100px;
+}
+
+#pimpinan > .image{
+    position: relative;
+    text-align: center;
+}
+
+#pimpinan article > h3{
+    position: relative;
+    bottom: 50px;
+    color: white;
+    font-size: 16px;
+}
+
+#pimpinan article > h4{
+    position: relative;
+    bottom: 50px;
+    color: white;
+    font-size: 11px;
+}
+
+#pimpinan > article > img {
+    width: 300px;
+    border-radius: 14px;
+}
+
+#pimpinan > article > p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 127px;
+    background-color: var(--warna-tambahan);
+    padding: 50px;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    .margin-container{
+        margin: 0 10px 0 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    .nav-link{
+        color: #fff;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+         opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(4px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+       transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--warna-tambahan);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    /* Content1 */
+    .title{
+    width: 357px;
+    }
+
+    .sub-title{
+        width: 357px;
+    }
+
+    .button-container{
+        display: flex;
+        padding: 8px;
+        justify-content: space-between;
+        width: 357px;
+        margin-bottom: 40px;
+    }
+
+    .button {
+        width: 100px;
+        height: 50px;
+        background-color: var(--warna-tambahan);
+        color: #fff;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    }
+
+    #above{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #above article img {
+        width: 360px;
+    }
+
+    /* Content2 */
+    #profil{
+        margin-bottom: 100px;
+    }
+
+    .besar{
+        font-size: 60px;
+        font-weight: 900;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .isi{
+        width: 357px;
+    }
+    
+    .isi > h2 {
+        margin-bottom: 8px;
+    }
+    
+    .isi > p {
+        margin-bottom: 8px;
+    }
+    
+    .tabel {
+        width: 357px;
+        margin-bottom: 20px;
+    }
+
+
+    /* Content 3 */
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    .card {
+        width: 357px;
+        margin-bottom: 20px;
+    }
+
+    /* Aside */
+    #pimpinan{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+
+    .margin-container {
+        margin : 0 20px 0 20px;
+    }
+
+    nav {
+        flex-direction: row;
+        text-align: center;
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+
+    nav li {
+        margin-left: 18px;
+    }
+
+    #above{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+
+    #above article img {
+        margin-top: 30px;
+    }
+
+    /* content 2 */
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabel {
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+}
